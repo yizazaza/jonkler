@@ -1,16 +1,18 @@
-# Fullscreen Video
+# Fullscreen YouTube Video Viewer
 
-This repository provides a distraction-free fullscreen view of a YouTube video.
+This repository provides a distraction-free, fullscreen view of a YouTube video. Click the link below to watch the video without borders or distractions.
 
-## How to Use
-
-Click the link below to view the video in fullscreen mode:
+## View the Video
 
 [View Fullscreen Video](https://yizazaza.github.io/jonkler/)
 
-## Embed Code
+## About
 
-The video will open in fullscreen mode using the following minimal HTML code:
+This project uses a simple HTML file to embed the YouTube video in fullscreen mode, hiding all unnecessary YouTube elements.
+
+## How It Works
+
+The `index.html` file includes the following code:
 
 ```html
 <!DOCTYPE html>
@@ -36,8 +38,5 @@ The video will open in fullscreen mode using the following minimal HTML code:
 </head>
 <body>
     <iframe 
-        src="https://www.youtube.com/embed/8rbhuml4bi4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0" 
-        allow="autoplay; fullscreen">
-    </iframe>
-</body>
-</html>
+        src="https://www.youtube.com/embed/8
+
