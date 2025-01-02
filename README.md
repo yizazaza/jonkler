@@ -1,28 +1,43 @@
-# Fullscreen Video Example (Cropped)
+# Fullscreen Video
 
-This repository demonstrates how to play a YouTube video in fullscreen mode with no title or controls, cropped to remove unwanted UI elements.
+This repository provides a distraction-free fullscreen view of a YouTube video.
 
-## Fullscreen Video Link
-Click the link below to watch the cropped fullscreen video:
+## How to Use
 
-[▶ Watch Cropped Fullscreen Video](https://www.youtube.com/embed/db6QIx11vMA?autoplay=1&controls=0&showinfo=0&modestbranding=1&rel=0&iv_load_policy=3)
+Click the link below to view the video in fullscreen mode:
 
-## Cropped Embed Example
-To display the video cropped with 20% removed from the edges, use this code:
+[View Fullscreen Video](https://yizazaza.github.io/jonkler/)
+
+## Embed Code
+
+The video will open in fullscreen mode using the following minimal HTML code:
 
 ```html
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Video</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
     <iframe 
-        src="https://www.youtube.com/embed/db6QIx11vMA?autoplay=1&controls=0&showinfo=0&modestbranding=1&rel=0&iv_load_policy=3" 
-        allow="autoplay; fullscreen" 
-        allowfullscreen 
-        style="position: absolute; top: -10%; left: -10%; width: 120%; height: 120%; border: none;">
+        src="https://www.youtube.com/embed/8rbhuml4bi4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0" 
+        allow="autoplay; fullscreen">
     </iframe>
-</div>
-```
-
-## About
-The video is embedded using YouTube's embed URL with parameters to:
-- **Autoplay** the video.
-- Hide as much UI as possible (e.g., controls, branding, annotations).
-- Adjust the video frame to crop 20% from the edges for a cleaner view.
+</body>
+</html>
